@@ -2616,10 +2616,10 @@ format:
         \mathbb{E}[f(x_{k}) - f^*] &\leq \frac{L \sigma^2}{ 2 \mu^2 k}
         \end{aligned}
         $$
-1.  Теорема сходимости траектории градиентного потока для выпуклых и PL-функций. 
+1.  Теорема сходимости траектории градиентного потока для PL-функций. 
 
     :::{.callout-note appearance="simple"}
-    Рассмотрим задачу оптимизации $f(x(t)) \rightarrow \min\limits_{\substack{x(t) \in \mathbb{R}^d \\ t \in T}}$, функции $f(x)$ и $x(t)$ гладкие, $f$ - выпуклая и удовлетворяет условию PL, т.е. $\forall x \mapsto \|\nabla f(x)|^2 \geqslant 2\mu (f(x) - f^*)$, тогда градиентный поток сходится линейно, а именно, выполняется неравенство $f(x(t)) - f^* \leqslant \exp\{-2\mu t\}\left(f(x(0)) - f^*\right)$.
+    Рассмотрим задачу оптимизации $f(x(t)) \rightarrow \min\limits_{\substack{x(t) \in \mathbb{R}^d \\ t \in T}}$, функции $f(x)$ и $x(t)$ гладкие, $f$ удовлетворяет условию PL, т.е. $\forall x \mapsto \|\nabla f(x)|^2 \geqslant 2\mu (f(x) - f^*)$, тогда градиентный поток сходится линейно, а именно, выполняется неравенство $f(x(t)) - f^* \leqslant \exp\{-2\mu t\}\left(f(x(0)) - f^*\right)$.
     :::
 
     Предположим, у нас выполняется условие Поляка-Лоясевича $\|\nabla f(x)\|^2 \geqslant 2\mu (f(x) - f^*)$, тогда
